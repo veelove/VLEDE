@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: 修改了主题
+name: 固定主题加入多线多拨
 
 on:
   schedule:
@@ -173,6 +173,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-koolproxyR=y
+          CONFIG_PACKAGE_luci-app-syncdial=y
           EOF
 
           # LuCI主题:
