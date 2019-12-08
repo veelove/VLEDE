@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: 固定主题加入多线多拨
+name:重新编译
 
 on:
   schedule:
