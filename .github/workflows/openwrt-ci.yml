@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: 添加了主题atmaterial、rosy和插件koolproxyR
+name: 树莓派3B
 
 on:
   schedule:
@@ -108,9 +108,9 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_x86=y
-          CONFIG_TARGET_x86_64=y
-          CONFIG_TARGET_x86_64_Generic=y
+          CONFIG_TARGET_brcm2708=y
+          CONFIG_TARGET_brcm2708_bcm2710=y
+          CONFIG_TARGET_brcm2708_bcm2710_DEVICE_rpi-3=y
           EOF
 
           # 固件压缩:
