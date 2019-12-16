@@ -196,6 +196,12 @@ jobs:
           CONFIG_PACKAGE_vim-fuller=y
           CONFIG_PACKAGE_wget=y
           EOF
+          
+          # Image Options
+          CONFIG_TARGET_KERNEL_PARTSIZE=16
+          CONFIG_TARGET_ROOTFS_PARTSIZE=800
+          CONFIG_TARGET_ROOTFS_PARTNAME=""
+          EOF
 
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
           cat >> .config <<EOF
